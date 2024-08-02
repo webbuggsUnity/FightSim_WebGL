@@ -63,7 +63,7 @@
         frameworkUrl: buildUrl + "/FightSim_WebGL.framework.js",
         codeUrl: buildUrl + "/FightSim_WebGL.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "Bugg Byte",
         productName: "FightSim_Danshan",
         productVersion: "0.1",
         showBanner: unityShowBanner,
@@ -108,7 +108,7 @@
               }).then((unityInstance) => {
                 loadingBar.style.display = "none";
                 fullscreenButton.onclick = () => {
-                  unityInstance.SetFullscreen(1);
+                  document.makeFullscreen('unity-container');
                 };
               }).catch((message) => {
                 alert(message);
